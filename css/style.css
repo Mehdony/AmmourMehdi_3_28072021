@@ -44,7 +44,18 @@ header .img-logo {
 }
 
 .explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f7f7f7;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.explorer .contain-explorer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,16 +69,50 @@ header .img-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 70%;
 }
 
-.explorer h1, .explorer p {
+.explorer .contain-explorer h1, .explorer .contain-explorer p {
   text-align: center;
 }
 
-.explorer .btn-exporer {
+.explorer .contain-explorer .btn-explorer {
   border-radius: 5em;
   border: 0;
   background-color: #FF79DA;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 210px;
+  padding: 15px 9px;
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(353deg, #9356DC, #FF79DA);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 23% 0%;
+  }
+  50% {
+    background-position: 78% 100%;
+  }
+  100% {
+    background-position: 23% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 23% 0%;
+  }
+  50% {
+    background-position: 78% 100%;
+  }
+  100% {
+    background-position: 23% 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
