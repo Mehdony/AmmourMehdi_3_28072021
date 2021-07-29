@@ -1,0 +1,59 @@
+*{
+    font-family:  Roboto, sans-serif;
+}
+
+// Header
+
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0 10px 0 ;
+            .img-logo{
+                width: 150px;
+                cursor: pointer;
+            } 
+}
+
+
+main{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+}
+// NAV
+
+.nav-location{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    .location-icon{
+    padding-right: 0.5em;
+    }
+}
+
+// Section explorer
+
+.explorer{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    h1, p{
+    text-align: center;
+    }
+    .btn-exporer{
+        border-radius: 5em;
+        border: 0;
+        background-color: #FF79DA;
+    }
+}

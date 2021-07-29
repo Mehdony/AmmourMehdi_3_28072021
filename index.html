@@ -1,29 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" />
+     <!--  Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/452bf3aaa3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    </head>
 
-<body>
-    
-<main>
-    <header>
-        <nav>
+    <body>
+        <!--  Header  -->
+        <header>
+        <a class="logo" href="#">
+            <img class="img-logo"
+            src="maquettes_ohmyfood/images/logo/ohmyfood@2x.svg"
+            alt="ohmyfood logo"
+            />
+        </a>
+        </header>
 
+        <!--  Main  -->
+        <main>
+        <!--  NAV  -->
+        <nav class="nav-location">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            <p>Paris,Belleville</p>
         </nav>
-    </header>
-</main>
-</body>
+
+        <!--  Section explorer -->
+        <section class="explorer">
+            <h1>Réservez le menu qui <br> vous convient</h1>
+            <p>Découvrez des restaurants d'exeption, <br> selectionnés par nos soins.</p>
+            <button class="btn-exporer">Explorer nos restaurants</button>
+        </section>
+        
+        <!--  Section process -->
+        <section class="process">
+            <h1 class="title-process">Fonctionnement</h1>
+            <p>Choisissez un restaurant</p>
+            <p>Composez votre menu</p>
+            <p>Dégustez au restaurant</p>
+        </section>
+
+        <!--  Section Restaurant  -->
+        <section class="restaurant">
+            <h1>Restaurants</h1>
+
+            <!--  Img1  -->
+            <div class="container">
+            <a href="">
+                <img
+                src="maquettes_ohmyfood/images/restaurants/gout.jpg"
+                alt="La palette du goût"
+                />
+            </a>
+            </div>
+            <div class="description">
+            <p><strong>La palette du goût</strong> Ménilmontant</p>
+            <i class="far fa-heart"></i>
+            </div>
+            
+            <!--  Img2  -->
+            <div class="container">
+            <a href="">
+                <img
+                src="maquettes_ohmyfood/images/restaurants/note.jpg"
+                alt="La note enchantée"
+                />
+            </a>
+            </div>
+            <div class="description">
+            <p><strong>La note enchantée</strong> Charonne</p>
+            <i class="far fa-heart"></i>
+            </div>
+            <!--  Img3  -->
+            <div class="container">
+            <a href="">
+                <img
+                src="maquettes_ohmyfood/images/restaurants/francaise.jpg"
+                alt="A la française"
+                />
+            </a>
+            </div>
+            <div class="description">
+            <p><strong>A la française</strong> Cité Rouge</p>
+            <i class="far fa-heart"></i>
+            </div>
+
+            <!-- Img4 -->
+            <div class="container">
+            <a href="">
+                <img
+                src="maquettes_ohmyfood/images/restaurants/delice.jpg"
+                alt="Le délice des sens"
+                />
+            </a>
+            </div>
+            <div class="description">
+            <p><strong>Le délice des sens</strong> Folie-Méricourt</p>
+            <i class="far fa-heart"></i>
+            </div>
+        </section>
+
+        <!--  Footer  -->
+        <div class="footer">
+            <img
+            src="/maquettes_ohmyfood/images/logo/ohmyfood.png"
+            alt="ohmyfood logo.png"
+            />
+            <a href="#">
+            <p>Proposer un restaurant</p>
+            </a>
+            <a href="#">
+            <p>Devenir partenaire</p>
+            </a>
+            <a href="#">
+            <p>Mentions légales</p>
+            </a>
+            <a href="#">
+            <p>Contact</p>
+            </a>
+        </div>
+        </main>
+    </body>
 </html>
