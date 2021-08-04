@@ -1,0 +1,19 @@
+.container {
+    @include column;
+    background-color: #f2f2f2;
+    width: 100%;
+    text-decoration: none;
+    .container-img {
+        width:50%;
+    }
+    .container-description {
+        @include row;
+         
+        .description {
+            color: black;
+        }
+        .heart {
+            width: 50%;
+        }
+    }
+}
