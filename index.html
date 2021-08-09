@@ -58,23 +58,50 @@
         </div>
       </section>
 
-      <!--  Section process -->
-      <section class="process">
-        <h1 class="title-process">Fonctionnement</h1>
-        <div class="steps">
-          <p><strong>Choisissez un restaurant</strong></p>
-          <p><strong>Composez votre menu</strong></p>
-          <p><strong>Dégustez au restaurant</strong></p>
-        </div>
+      <!--  Section tutorial -->
+      <section class="tutorial">
+        <h1 class="title-tutorial">Fonctionnement</h1>
+          <div class="step">
+            <div class="number-tuto"> 
+              <p>1</p> 
+            </div>
+            <i class="fas fa-mobile-alt icon"></i>
+            <p>
+              Choisissez un restaurant
+            </p>
+          </div>
+     
+          <div class="step">
+            <div class="number-tuto"> 
+              <p>2</p> 
+            </div>
+            <i class="fas fa-list-ul icon"></i>
+            <p>
+              Composez votre menu
+            </p>
+          </div>
+      
+        
+          <div class="step">
+            <div class="number-tuto"> 
+              <p>3</p> 
+            </div>
+            <i class="fas fa-store icon"></i>
+            <p>
+              Dégustez au restaurant
+            </p>
+          </div>
+        
         
       </section>
 
       <!--  Section Restaurant  -->
       <section class="restaurant">
-        <h1>Restaurants</h1>
+        <h1 class="title-restaurant">Restaurants</h1>
 
         <!--  Img1  -->
         <a href="#" class="container">
+          <p class="new">Nouveau</p>
           <img
             class="container-img"
             src="maquettes_ohmyfood/images/restaurants/gout.jpg"
@@ -83,8 +110,8 @@
 
           <div class="container-description">
             <div class="description">
-              <p><strong>La palette du goût</strong></p>
-              <p>Ménilmontant</p>
+              <p class="p1"><strong>La palette du goût</strong></p>
+              <p class="p2">Ménilmontant</p>
             </div>
             <i class="far fa-heart heart"></i>
           </div>
@@ -92,16 +119,17 @@
 
         <!--  Img2  -->
         <a href="#" class="container">
+          <p class="new">Nouveau</p>
           <img
             class="container-img"
-            src="maquettes_ohmyfood/images/restaurants/gout.jpg"
+            src="maquettes_ohmyfood/images/restaurants/note.jpg"
             alt="La palette du goût"
           />
 
           <div class="container-description">
             <div class="description">
-              <p><strong>La palette du goût</strong></p>
-              <p>Ménilmontant</p>
+              <p class="p1" ><strong>La note enchantée</strong></p>
+              <p class="p2" >Charonne</p>
             </div>
             <i class="far fa-heart heart"></i>
           </div>
@@ -111,14 +139,14 @@
         <a href="#" class="container">
           <img
             class="container-img"
-            src="maquettes_ohmyfood/images/restaurants/gout.jpg"
+            src="maquettes_ohmyfood/images/restaurants/francaise.jpg"
             alt="La palette du goût"
           />
 
           <div class="container-description">
             <div class="description">
-              <p><strong>La palette du goût</strong></p>
-              <p>Ménilmontant</p>
+              <p class="p1" ><strong>À la française</strong></p>
+              <p class="p2" >Cité Rouge</p>
             </div>
             <i class="far fa-heart heart"></i>
           </div>
@@ -128,14 +156,14 @@
         <a href="#" class="container">
           <img
             class="container-img"
-            src="maquettes_ohmyfood/images/restaurants/gout.jpg"
+            src="maquettes_ohmyfood/images/restaurants/delice.jpg"
             alt="La palette du goût"
           />
 
           <div class="container-description">
             <div class="description">
-              <p><strong>La palette du goût</strong></p>
-              <p>Ménilmontant</p>
+              <p class="p1" ><strong>Le délice des sens</strong></p>
+              <p class="p2" >Folie-Méricourt</p>
             </div>
             <i class="far fa-heart heart"></i>
           </div>
@@ -144,22 +172,32 @@
 
       <!--  Footer  -->
       <div class="footer">
-        <img  class="logo-footer" 
-          src="/maquettes_ohmyfood/images/logo/ohmyfood.png"
-          alt="ohmyfood logo.png"
-        />
-        <a href="#">
-          <p>Proposer un restaurant</p>
-        </a>
-        <a href="#">
-          <p>Devenir partenaire</p>
-        </a>
-        <a href="#">
-          <p>Mentions légales</p>
-        </a>
-        <a href="#">
-          <p>Contact</p>
-        </a>
+        <div class="footer-group">
+          <img class="footer-logo"
+            src="maquettes_ohmyfood/images/logo/ohmyfood.png"
+            alt="ohmyfood logo.png"
+          />
+          <a class="footer-link" href="#">
+            <div class="link">
+              <i class="fas fa-utensils icon-footer"></i>
+              <p id="cutlery">Proposer un restaurant</p>
+            </div>
+            
+          </a>
+          <a class="footer-link" href="#">
+            <div class="link"> 
+              <i class="fas fa-hands-helping icon-footer"></i>
+              <p>Devenir partenaire</p>
+            </div>
+            
+          </a>
+          <a class="footer-link" href="#">
+            <p>Mentions légales</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p >Contact</p>
+          </a>
+        </div>
       </div>
     </main>
   </body>
