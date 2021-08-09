@@ -215,6 +215,12 @@
   color: #a7a7a7;
 }
 
+.p {
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+}
+
 * {
   font-family: Roboto, sans-serif;
 }
