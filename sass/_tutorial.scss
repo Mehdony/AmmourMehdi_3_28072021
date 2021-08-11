@@ -15,24 +15,21 @@
         justify-content: flex-start;
         align-items: flex-start;
         width: 80%;
-       
-        
+        margin-top: 2em;
     }   
-
 
 .step {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: $light-gray;
     border-radius: 1em;
     width: 80%;
+    height: 3.5em;
     padding: 0.3em;
     text-align: center;
     font-weight: bold;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-    
     .number-tuto {
         display: flex;
         justify-content: center;
@@ -47,7 +44,38 @@
         font-size: 12px;
     }
     .icon{
-            margin: 0 1em 0 0;
+            margin: 0 2em 0 0;
             color: rgb(167, 167, 167);
         }
+
 }
+ .step3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(245, 237, 255) ;
+    border-radius: 1em;
+    width: 80%;
+    height: 3.5em;
+    padding: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    .number-tuto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $purple;
+        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+        color: white;
+        position: relative;
+        right: 1em;
+        font-size: 12px;
+    }
+    .icon3{
+        margin: 0 2em 0 0;
+        color: $purple;
+    }
+ }
