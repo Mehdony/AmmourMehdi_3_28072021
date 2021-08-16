@@ -70,28 +70,57 @@
                 text-align: justify;
             }
         }
-        .heart {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding-left: 2em;
-            width: 5%;
-            font-size: 25px;
-            padding: 5px 9px;
-           
-            &:hover{
-                background: linear-gradient(353deg, $purple, $pink);
-                font-weight: bold;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
+        
 
+    
 
 
 
 
     }
+}
+
+
+.heart-group{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 50px;
+   transform: scale(1.2);
+    .heart {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            transition: 350ms ease-in-out ;
+            transform: scale(1);
+            background: white;
+            &:hover + .heart2{
+                transform: scale(1.1);
+                transition: 450ms ease-in-out;
+            }
+            &:hover  {
+                transform: scale(0);
+                transition: 450ms ease-in-out;
+            }
+           
+        }
+        .heart2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            right: 50%;
+            font-size: 23px;
+            position: relative;
+            background: linear-gradient(353deg, $purple, $pink);
+            background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            transform: scale(0);
+            transition: 450ms ease-in-out;
+            padding-left: 2px;
+          
+        }
 }

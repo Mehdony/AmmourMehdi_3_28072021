@@ -110,7 +110,20 @@
   text-align: justify;
 }
 
-.container .container-description .heart {
+.heart-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.heart-group .heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,18 +137,54 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 2em;
-  width: 5%;
   font-size: 25px;
-  padding: 5px 9px;
+  -webkit-transition: 350ms ease-in-out;
+  transition: 350ms ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: white;
 }
 
-.container .container-description .heart:hover {
+.heart-group .heart:hover + .heart2 {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 450ms ease-in-out;
+  transition: 450ms ease-in-out;
+}
+
+.heart-group .heart:hover {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 450ms ease-in-out;
+  transition: 450ms ease-in-out;
+}
+
+.heart-group .heart2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 50%;
+  font-size: 23px;
+  position: relative;
   background: linear-gradient(353deg, #9356DC, #FF79DA);
-  font-weight: bold;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 450ms ease-in-out;
+  transition: 450ms ease-in-out;
+  padding-left: 2px;
 }
 
 .tutorial {
