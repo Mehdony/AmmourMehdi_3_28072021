@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'cards';
 @import 'tutorial';
+@import 'menu-page';
 
 * {
     font-family: Roboto, sans-serif;
@@ -102,7 +103,8 @@ header {
             width: 50%;
             height: 50%;
             filter: invert(100%);
-            
+            font-family: 'Shrikhand', cursive;
+            font-size: 25px;
         }
         .footer-link{
             text-decoration: none;

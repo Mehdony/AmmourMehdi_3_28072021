@@ -314,6 +314,53 @@
   color: #9356DC;
 }
 
+.bg-img {
+  width: 100%;
+}
+
+.menu-container {
+  background-color: #f7f7f7;
+  position: relative;
+  bottom: 50px;
+  padding-bottom: 100px;
+  border-radius: 30px 30px 0 0;
+}
+
+.menu-container .title-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.menu-container .title-group h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 27px;
+  width: 100%;
+}
+
+.menu-container .menu-group .menu .dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 1em;
+  width: 80%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
 * {
   font-family: Roboto, sans-serif;
 }
@@ -441,6 +488,8 @@ header .img-logo {
   height: 50%;
   -webkit-filter: invert(100%);
           filter: invert(100%);
+  font-family: 'Shrikhand', cursive;
+  font-size: 25px;
 }
 
 .footer .footer-group .footer-link {
