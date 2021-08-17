@@ -1,3 +1,6 @@
+body {
+    font-weight: 300;
+}
 .bg-img {
     width: 100%;
 }
@@ -7,31 +10,60 @@
     position: relative;
     bottom: 50px;
     padding-bottom: 100px;
-    border-radius: 30px 30px 0 0 ;
+    border-radius: 30px 30px 0 0;
     .title-group {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
-        padding: 20px;
-        h1{
+        // transform: scale(1.05);
+        margin-left: 30px;
+        h1 {
             font-family: "Shrikhand", cursive;
             font-size: 27px;
-            width: 100%;
+            font-weight: 400;
+            width: 265px;
         }
-       
     }
     .menu-group {
+        margin-left: 20px;
         .menu-group-title {
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .menu-group-title::after {
+            content: "";
+            display: block;
+            background-color: $mint;
+            width: 47px;
+            height: 3px;
+            margin-top: 10px;
         }
         .menu {
             .dish {
                 display: flex;
                 flex-direction: row;
                 border-radius: 1em;
-                width: 80%;
+                width: 315px;
+                height: 55px;
                 padding: 10px;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                .dish-description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .dish-name {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+                    .dish-ingredients {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                }
+                .dish-price{
+                    margin: 20px 15px 0 auto;    
+             
+                }
             }
         }
     }
