@@ -1,19 +1,19 @@
-.restaurant{
+.restaurant {
     background-color: $light-gray;
     padding: 2em 0 2em 0;
-    position:relative ;
+    position: relative;
 }
 
-.title-restaurant{
+.title-restaurant {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 80%;
     margin-left: 1em;
 }
-.new{
+.new {
     display: flex;
-    @include row ;
+    @include row;
     justify-content: center;
     align-items: center;
     background-color: $mint;
@@ -22,9 +22,9 @@
     font-weight: bold;
     font-size: 13px;
     color: #347766;
-    margin: 0.9em 1em 0 18em ;
+    margin: 0.9em 1em 0 18em;
     border-radius: 3px;
-    position:absolute;
+    position: absolute;
 }
 .container {
     @include column;
@@ -38,8 +38,7 @@
     font-size: 16px;
     width: 85%;
     height: 12em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transform: scale(1);
     transition: 0.1s ease-in-out;
     text-decoration: none;
@@ -53,74 +52,63 @@
         width: 100%;
         height: 80%;
         object-fit: cover;
-
     }
     .container-description {
         @include row;
-         line-height: 5px;
-         padding-top: 0.2em;
+        line-height: 5px;
+        padding-top: 0.2em;
         .description {
             color: black;
             width: 79%;
             margin-left: 1em;
-            .p1{
+            .p1 {
                 text-align: justify;
             }
-            .p2{
+            .p2 {
                 text-align: justify;
             }
         }
-        
-
-    
-
-
-
-
     }
 }
 
-
-.heart-group{
+.heart-group {
     display: flex;
     justify-items: center;
     align-items: center;
     width: 50px;
-   transform: scale(1.2);
+    transform: scale(1.2);
     .heart {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            transition: 350ms ease-in-out ;
-            transform: scale(1);
-            background: white;
-            &:hover + .heart2{
-                transform: scale(1.1);
-                transition: 450ms ease-in-out;
-            }
-            &:hover  {
-                transform: scale(0);
-                transition: 450ms ease-in-out;
-            }
-           
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        transition: 350ms ease-in-out;
+        transform: scale(1);
+        background: white;
+        &:hover + .heart2 {
+            transform: scale(1.1);
+            transition: 450ms ease-in-out;
         }
-        .heart2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            right: 50%;
-            font-size: 23px;
-            position: relative;
-            background: linear-gradient(353deg, $purple, $pink);
-            background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+        &:hover {
             transform: scale(0);
             transition: 450ms ease-in-out;
-            padding-left: 2px;
-          
         }
+    }
+    .heart2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        right: 50%;
+        font-size: 23px;
+        position: relative;
+        background: linear-gradient(353deg, $purple, $pink);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transition: 450ms ease-in-out;
+        padding-left: 2px;
+    }
 }
