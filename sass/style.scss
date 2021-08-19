@@ -1,9 +1,9 @@
 // IMPORT
-@import 'variable';
-@import 'mixins';
-@import 'cards';
-@import 'tutorial';
-@import 'menu-page';
+@import "variable";
+@import "mixins";
+@import "cards";
+@import "tutorial";
+@import "menu-page";
 
 * {
     font-family: Roboto, sans-serif;
@@ -14,7 +14,58 @@
 body {
     margin: 0;
     padding: 0;
-  
+}
+
+.loading-container {
+    background-color: white;
+    filter: opacity(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: loader 1.5s linear ;
+    opacity: 0;
+    .loading-spinner {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        &::after {
+            content: " ";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            border-color: $mint transparent $purple transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes loader {
+            0% {
+              opacity: 0.8;
+            }
+            80% {
+              opacity: 0.8;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+    }
 }
 header {
     display: flex;
@@ -22,7 +73,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 15px 0 10px 0;
-    position: relative; 
+    position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
     .img-logo {
@@ -60,7 +111,7 @@ header {
         align-items: center;
         width: 77%;
         padding: 1em;
-        h1{
+        h1 {
             margin: 0.5em;
         }
         h1,
@@ -77,14 +128,14 @@ header {
             margin-top: 2em;
             color: white;
             font-size: 16px;
-            background: rgb(147,86,220);
-            background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            background: rgb(147, 86, 220);
+            background: linear-gradient(353deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             text-align: center;
             transition: 0.5s;
             display: block;
             &:hover {
-                background-position: right center; 
+                background-position: right center;
                 box-shadow: rgba(50, 50, 93, 0.8) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 text-decoration: none;
                 opacity: 0.9;
@@ -95,44 +146,37 @@ header {
 
 //  Section footer
 
-
-.footer{
-    background-color:  #252525;
+.footer {
+    background-color: #252525;
     padding: 2em 0 2em 0;
-    .footer-group{
+    .footer-group {
         margin-left: 2em;
 
-        .footer-logo{
+        .footer-logo {
             width: 50%;
             height: 50%;
             filter: invert(100%);
-            font-family: 'Shrikhand', cursive;
+            font-family: "Shrikhand", cursive;
             font-size: 25px;
         }
-        .footer-link{
+        .footer-link {
             text-decoration: none;
             color: white;
-            .link{
+            .link {
                 display: flex;
                 flex-direction: row;
                 text-align: center;
                 width: 100%;
                 line-height: 5px;
             }
-            .icon-footer{
+            .icon-footer {
                 color: white;
                 position: relative;
-                padding: 0.7em 0.5em 0 0 ;
-               
+                padding: 0.7em 0.5em 0 0;
             }
-            #cutlery{
+            #cutlery {
                 margin-left: 0.4em;
             }
-        } 
-            
+        }
     }
-    
 }
-
-
- 

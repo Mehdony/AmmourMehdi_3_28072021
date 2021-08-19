@@ -1,11 +1,20 @@
 body {
     font-weight: 300;
-   
+    
 }
 
 .body-menus{
-     background-color: $light-gray;
+    background-color: $light-gray;
 }
+
+.arrow{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
 .bg-img {
     width: 100%;
 }
@@ -56,15 +65,15 @@ body {
                 margin-bottom: 1em;
                 &:hover > .dish-valid {
                     width: 60px;
-                    transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
+                    transition: 450ms ease-in-out;
                 }
                 &:hover > .dish-valid > .valid {
                     transform: rotate(360deg);
-                    transition: 700ms;
+                    transition: 450ms ease-in-out;
                 }
                 &:hover > .dish-description {
                     width: 210px;
-                    transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
+                    transition: 450ms ease-in-out;
                 }
                 .dish-description {
                     display: flex;
@@ -72,7 +81,7 @@ body {
                     justify-content: space-around;
                     padding: 10px;
                     width: 270px;
-                    transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
+                    transition: 450ms ease-in-out;
                     .dish-name {
                         margin: 0;
                         font-size: 18px;
@@ -95,7 +104,7 @@ body {
                     width: 0;
                     height: 70px;
                     padding: 0;
-                    transition: 550ms cubic-bezier(0.4, 0.42, 0.63, 0.62);
+                    transition: 450ms ease-in-out;
                     background-color: $mint;
                     .valid {
                         display: flex;
@@ -107,7 +116,7 @@ body {
                         position: relative;
                         font-size: 20px;
                         transform: rotate(0deg);
-                        transition: 700ms;
+                        transition: 450ms ease-in-out;
                     }
                 }
             }
@@ -134,9 +143,9 @@ body {
             display: block;
             &:hover {
                 background-position: right center; 
-                box-shadow: rgba(50, 50, 93, 0.8) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                box-shadow: rgba(50, 50, 93, 0.4) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 text-decoration: none;
-                opacity: 0.9;
+                opacity: 0.8;
             }
         }
     }
