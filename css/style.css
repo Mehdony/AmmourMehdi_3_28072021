@@ -370,6 +370,7 @@ body {
 }
 
 .menu-container .menu-group .menu .dish {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,11 +379,25 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   border-radius: 1em;
-  width: 315px;
-  height: 55px;
-  padding: 10px;
+  width: 335px;
+  height: 70px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu-container .menu-group .menu .dish:hover > .dish-valid {
+  width: 60px;
+  -webkit-transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
+  transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
+}
+
+.menu-container .menu-group .menu .dish:hover > .dish-valid > .valid {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 700ms;
+  transition: 700ms;
 }
 
 .menu-container .menu-group .menu .dish .dish-description {
@@ -395,6 +410,7 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 10px;
 }
 
 .menu-container .menu-group .menu .dish .dish-description .dish-name {
@@ -409,6 +425,36 @@ body {
 
 .menu-container .menu-group .menu .dish .dish-price {
   margin: 20px 15px 0 auto;
+}
+
+.menu-container .menu-group .menu .dish .dish-valid {
+  width: 0;
+  height: 70px;
+  padding: 0;
+  -webkit-transition: 550ms cubic-bezier(0.4, 0.42, 0.63, 0.62);
+  transition: 550ms cubic-bezier(0.4, 0.42, 0.63, 0.62);
+  background-color: #99E2D0;
+}
+
+.menu-container .menu-group .menu .dish .dish-valid .valid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: relative;
+  font-size: 20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 700ms;
+  transition: 700ms;
 }
 
 * {
