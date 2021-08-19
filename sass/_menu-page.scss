@@ -1,5 +1,10 @@
 body {
     font-weight: 300;
+   
+}
+
+.body-menus{
+     background-color: $light-gray;
 }
 .bg-img {
     width: 100%;
@@ -9,7 +14,6 @@ body {
     background-color: $light-gray;
     position: relative;
     bottom: 50px;
-    padding-bottom: 100px;
     border-radius: 30px 30px 0 0;
     .title-group {
         display: flex;
@@ -49,26 +53,39 @@ body {
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 overflow: hidden;
                 cursor: pointer;
-                &:hover > .dish-valid{
+                margin-bottom: 1em;
+                &:hover > .dish-valid {
                     width: 60px;
-                    transition: 550ms cubic-bezier(.23,.79,.64,.61);
+                    transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
                 }
-                &:hover > .dish-valid > .valid{
+                &:hover > .dish-valid > .valid {
                     transform: rotate(360deg);
-                    transition: 700ms ;
+                    transition: 700ms;
+                }
+                &:hover > .dish-description {
+                    width: 210px;
+                    transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
                 }
                 .dish-description {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
                     padding: 10px;
+                    width: 270px;
+                    transition: 550ms cubic-bezier(0.23, 0.79, 0.64, 0.61);
                     .dish-name {
                         margin: 0;
                         font-size: 18px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
                     .dish-ingredients {
                         margin: 0;
-                        font-size: 16px;
+                        font-size: 15px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
                 }
                 .dish-price {
@@ -78,21 +95,48 @@ body {
                     width: 0;
                     height: 70px;
                     padding: 0;
-                    transition: 550ms cubic-bezier(.4,.42,.63,.62);
-                     background-color: $mint;
-                    .valid{
+                    transition: 550ms cubic-bezier(0.4, 0.42, 0.63, 0.62);
+                    background-color: $mint;
+                    .valid {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         width: 100%;
                         height: 100%;
                         color: white;
-                        position: relative ;
+                        position: relative;
                         font-size: 20px;
                         transform: rotate(0deg);
-                        transition: 700ms ;
+                        transition: 700ms;
                     }
                 }
+            }
+        }
+    }
+    .order {
+        display: flex;
+        justify-content: center;
+
+        .btn-order {
+            border-radius: 5em;
+            border: 0;
+            width: 215px;
+            height: 55px;
+            padding: 15px 9px;
+            margin-top: 2em;
+            color: white;
+            font-size: 16px;
+            background: rgb(147,86,220);
+            background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            text-align: center;
+            transition: 0.5s;
+            display: block;
+            &:hover {
+                background-position: right center; 
+                box-shadow: rgba(50, 50, 93, 0.8) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                text-decoration: none;
+                opacity: 0.9;
             }
         }
     }

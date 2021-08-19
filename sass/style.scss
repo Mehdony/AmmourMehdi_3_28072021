@@ -72,20 +72,23 @@ header {
             border-radius: 5em;
             border: 0;
             width: 215px;
+            height: 55px;
             padding: 15px 9px;
-            margin-top: 1.5em;
+            margin-top: 2em;
             color: white;
             font-size: 16px;
-            background: linear-gradient(328deg, $pink, $purple);
-            background-size: 400% 400%;
+            background: rgb(147,86,220);
+            background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             text-align: center;
             transition: 0.5s;
             display: block;
             &:hover {
-               background-position: right center; /* change the direction of the change here */
-               text-decoration: none;
-             }
+                background-position: right center; 
+                box-shadow: rgba(50, 50, 93, 0.8) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                text-decoration: none;
+                opacity: 0.9;
+            }
         }
     }
 }
