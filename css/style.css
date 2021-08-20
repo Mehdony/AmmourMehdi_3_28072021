@@ -332,6 +332,9 @@ body {
 
 .bg-img {
   width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu-container {
@@ -364,6 +367,7 @@ body {
 
 .menu-container .menu-group {
   margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .menu-container .menu-group .menu-group-title {
@@ -397,6 +401,56 @@ body {
   overflow: hidden;
   cursor: pointer;
   margin-bottom: 1em;
+  -webkit-animation: moove 250ms linear  both;
+          animation: moove 250ms linear  both;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.menu-container .menu-group .menu .dish:nth-child(1) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.menu-container .menu-group .menu .dish:nth-child(2) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.menu-container .menu-group .menu .dish:nth-child(3) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.menu-container .menu-group .menu .dish:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+@-webkit-keyframes moove {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moove {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .menu-container .menu-group .menu .dish:hover > .dish-valid {
@@ -499,7 +553,6 @@ body {
   width: 215px;
   height: 55px;
   padding: 15px 9px;
-  margin-top: 2em;
   color: white;
   font-size: 16px;
   background: #9356dc;
@@ -543,8 +596,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  z-index: 999;
-  position: absolute;
+  z-index: -999;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -598,24 +651,30 @@ body {
 @-webkit-keyframes loader {
   0% {
     opacity: 0.8;
+    z-index: 999;
   }
   80% {
     opacity: 0.8;
+    z-index: 999;
   }
   100% {
     opacity: 0;
+    z-index: 999;
   }
 }
 
 @keyframes loader {
   0% {
     opacity: 0.8;
+    z-index: 999;
   }
   80% {
     opacity: 0.8;
+    z-index: 999;
   }
   100% {
     opacity: 0;
+    z-index: 999;
   }
 }
 

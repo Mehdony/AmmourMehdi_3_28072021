@@ -1,13 +1,12 @@
 body {
     font-weight: 300;
-    
 }
 
-.body-menus{
+.body-menus {
     background-color: $light-gray;
 }
 
-.arrow{
+.arrow {
     font-size: 22px;
     color: black;
     position: absolute;
@@ -17,6 +16,8 @@ body {
 
 .bg-img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .menu-container {
@@ -24,11 +25,11 @@ body {
     position: relative;
     bottom: 50px;
     border-radius: 30px 30px 0 0;
+
     .title-group {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        // transform: scale(1.05);
         margin-left: 30px;
         h1 {
             font-family: "Shrikhand", cursive;
@@ -39,6 +40,7 @@ body {
     }
     .menu-group {
         margin-left: 20px;
+        margin-bottom: 50px;
         .menu-group-title {
             font-weight: 400;
             font-size: 18px;
@@ -63,6 +65,24 @@ body {
                 overflow: hidden;
                 cursor: pointer;
                 margin-bottom: 1em;
+                animation: moove 250ms linear  both;
+                animation-delay: 300ms;
+                @for $i from 1 through 4 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: $i * 200ms;
+                    }
+                }
+                @keyframes moove {
+                    0% {
+                        transform: translateY(15px);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        transform: translateY(0px);
+                        opacity: 1;
+                    }
+                }
                 &:hover > .dish-valid {
                     width: 60px;
                     transition: 450ms ease-in-out;
@@ -132,17 +152,16 @@ body {
             width: 215px;
             height: 55px;
             padding: 15px 9px;
-            margin-top: 2em;
             color: white;
             font-size: 16px;
-            background: rgb(147,86,220);
-            background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            background: rgb(147, 86, 220);
+            background: linear-gradient(353deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             text-align: center;
             transition: 0.5s;
             display: block;
             &:hover {
-                background-position: right center; 
+                background-position: right center;
                 box-shadow: rgba(50, 50, 93, 0.4) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 text-decoration: none;
                 opacity: 0.8;
