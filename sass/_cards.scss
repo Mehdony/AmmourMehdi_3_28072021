@@ -2,6 +2,19 @@
     background-color: $light-gray;
     padding: 2em 0 2em 0;
     position: relative;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 2em 2em 2em 2em;
+        margin-bottom: 4em;
+        column-gap: 2em;
+        row-gap: 1em;
+    }
 }
 
 .title-restaurant {
@@ -10,6 +23,24 @@
     align-items: flex-start;
     width: 80%;
     margin-left: 1em;
+    @include desktop{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        height: 50px;
+        width: 60%;
+        .title-restaurant::after {
+            content: "";
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $mint;
+            width: 47px;
+            height: 3px;
+            margin-top: 20px;
+        }
+    }
 }
 .new {
     display: flex;
@@ -25,6 +56,10 @@
     margin: 0.9em 1em 0 18em;
     border-radius: 3px;
     position: absolute;
+    @include desktop {
+        margin: 1.5em 1em 0 27em;
+        width: 20%;
+    }
 }
 .container {
     @include column;
@@ -44,6 +79,20 @@
     text-align: center;
     margin: 0 0 2em 1.5em;
     padding-bottom: 1.5em;
+    @include desktop {
+        width: 500px;
+        height: 230px;
+        transform: scale(1);
+        transition: 0.1s ease-in-out;
+        margin: 0.8em;
+        &:hover {
+            transform: scale(1.02);
+            background-position: right center;
+            box-shadow: rgba(50, 50, 93, 0.8) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+    }
 
     .container-img {
         align-content: center;
@@ -90,7 +139,7 @@
             transition: 450ms ease-in-out;
         }
         &:hover {
-            transform: scale(0);
+            filter: opacity(0);
             transition: 450ms ease-in-out;
         }
     }
@@ -111,4 +160,3 @@
         padding-left: 2px;
     }
 }
-

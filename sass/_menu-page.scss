@@ -105,9 +105,9 @@ body {
                     .dish-name {
                         margin: 0;
                         font-size: 18px;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
+                        white-space: nowrap; // pour empécher le retour à la ligne
+                        text-overflow: ellipsis;  // ... pour laisser la place à valid
+                        overflow: hidden;  // pour cacher ce qui est hors du container 
                     }
                     .dish-ingredients {
                         margin: 0;

@@ -8,6 +8,13 @@
     width: 100%;
     row-gap: 1em;
     padding-bottom: 70px;
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+    }
 }
 
 .title-tutorial{

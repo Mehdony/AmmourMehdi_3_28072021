@@ -78,6 +78,13 @@ header {
     padding: 15px 0 10px 0;
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+    }
 
     .img-logo {
         width: 150px;
@@ -93,7 +100,13 @@ header {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+    }
     .location-icon {
         padding-right: 0.5em;
     }
@@ -107,6 +120,15 @@ header {
     background-color: $light-gray;
     width: 100%;
     padding-bottom: 30px;
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 0 0 2em 2em;
+    }
+   
     .contain-explorer {
         display: flex;
         flex-direction: column;
@@ -114,10 +136,10 @@ header {
         align-items: center;
         width: 77%;
         padding: 1em;
-        h1 {
+        h2 {
             margin: 0.5em;
         }
-        h1,
+        h2,
         p {
             text-align: center;
             margin: 0.5em;
@@ -152,8 +174,24 @@ header {
 .footer {
     background-color: #252525;
     padding: 2em 0 2em 0;
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 2em 2em 0 0;
+        position: relative;
+    }
     .footer-group {
-        margin-left: 2em;
+        display: flex;
+        justify-content: flex-start;
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin-left: 2em;
+        }
 
         .footer-logo {
             width: 50%;
@@ -161,11 +199,31 @@ header {
             filter: invert(100%);
             font-family: "Shrikhand", cursive;
             font-size: 25px;
+            @include desktop{
+                width: 30%;
+            }
         }
         .footer-link {
             text-decoration: none;
             color: white;
+            @include desktop{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 350px;
+                margin-left: 1em;
+            }
+    
             .link {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                width: 100%;
+                line-height: 5px;
+            }
+            
+            .link1 {
                 display: flex;
                 flex-direction: row;
                 text-align: center;
@@ -176,10 +234,13 @@ header {
                 color: white;
                 position: relative;
                 padding: 0.7em 0.5em 0 0;
+                
             }
             #cutlery {
                 margin-left: 0.4em;
+                
             }
         }
     }
 }
+ 
