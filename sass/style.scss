@@ -18,9 +18,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +40,7 @@ main{
     left: 0;
     right: 0;
     bottom: 0;
-    animation: loader 1.5s linear ;
+    animation: loader 1.5s linear;
     opacity: 0;
     .loading-spinner {
         display: inline-block;
@@ -66,18 +67,18 @@ main{
         }
         @keyframes loader {
             0% {
-              opacity: 0.8;
-              z-index: 999;
+                opacity: 0.8;
+                z-index: 999;
             }
             80% {
-              opacity: 0.8;
-              z-index: 999;
+                opacity: 0.8;
+                z-index: 999;
             }
             100% {
-              opacity: 0;
-              z-index: 999;
+                opacity: 0;
+                z-index: 999;
             }
-          }
+        }
     }
 }
 header {
@@ -88,12 +89,17 @@ header {
     padding: 15px 0 10px 0;
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    @include desktop{
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+    }
+    @include desktop {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 1024px;
-
     }
 
     .img-logo {
@@ -111,12 +117,17 @@ header {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    @include desktop{
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+    }
+    @include desktop {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 1024px;
-
     }
     .location-icon {
         padding-right: 0.5em;
@@ -131,12 +142,18 @@ header {
     background-color: $light-gray;
     width: 100%;
     padding-bottom: 30px;
-    @include desktop{
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+        border-radius: 0 0 2em 2em;
+    }
+    @include desktop {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 1024px;
-
         border-radius: 0 0 2em 2em;
     }
 
@@ -186,25 +203,39 @@ header {
     background-color: #252525;
     padding: 2em 0 2em 50px;
     width: 100%;
-    
-    @include desktop{
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+        border-radius: 2em 2em 0 0;
+        padding: inherit;
+        position: relative;
+        height: 120px;
+    }
+    @include desktop {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 1024px;
-
         border-radius: 2em 2em 0 0;
         position: relative;
+        height: 130px;
     }
     .footer-group {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        @include desktop{
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            width: 768px;
+        }
+        @include desktop {
             display: flex;
             flex-direction: row;
             width: 980px;
-        
         }
 
         .footer-logo {
@@ -213,74 +244,137 @@ header {
             filter: invert(100%);
             font-family: "Shrikhand", cursive;
             font-size: 25px;
-            @include desktop{
+            @include tablet {
+                width: 160px;
+                margin-left: 5px;
+                
+            }
+            @include desktop {
                 width: 200px;
                 margin-left: 20px;
             }
-
         }
         .footer-link {
             text-decoration: none;
             color: white;
-            @include desktop{
+            @include tablet {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                // width: 180px;
-     
-
             }
-
-            .link {
+            @include desktop {
                 display: flex;
                 flex-direction: row;
-                text-align: center;
-                width: 100%;
-                line-height: 5px;
-                @include desktop{
-                    display: flex;
-                    justify-content: center;
-                    width: inherit;
-                }
+                justify-content: space-around;
+                align-items: center;
             }
-
+            
+            
             .link1 {
                 display: flex;
                 flex-direction: row;
                 text-align: center;
                 align-items: center;
                 width: 100%;
-                @include desktop{
+                @include tablet {
+                    align-items: center;
+                    column-gap: 5px;
+                    width: 198px;
+                    margin-left: 5px;
+                }
+                @include desktop {
                     align-items: center;
                     column-gap: 5px;
                     width: 220px;
-                    margin-left:10px;
-                    
+                    margin-left: 10px;
                 }
-                
+            }
+            .link2 {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                @include tablet {
+                    align-items: center;
+                    column-gap: 5px;
+                    width: 160px;
+                    margin-left: 5px;
+                }
+                @include desktop {
+                    align-items: center;
+                    column-gap: 5px;
+                    width: 220px;
+                    margin-left: 10px;
+                }
+            }
+            .link3 {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                width: 100%;
+                line-height: 5px;
+                @include tablet {
+                    display: flex;
+                    justify-content: center;
+                    width: 120px;
+                }
+                @include desktop {
+                    display: flex;
+                    justify-content: center;
+                    width: inherit;
+                }
+            }
+            .link4 {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                width: 100%;
+                line-height: 5px;
+                @include tablet {
+                    display: flex;
+                    justify-content: center;
+                    width: 80px;
+                }
+                @include desktop {
+                    display: flex;
+                    justify-content: center;
+                    width: inherit;
+                }
             }
             .icon-footer {
                 color: white;
                 position: relative;
                 margin-right: 10px;
-                @include desktop{
+                @include tablet {
                     padding: inherit;
-                   margin-right: inherit;
+                    margin-right: inherit;
                 }
-
+                @include desktop {
+                    padding: inherit;
+                    margin-right: inherit;
+                }
             }
             #cutlery {
                 margin-left: 0.4em;
-                @include desktop{
+                @include tablet {
+                    display: inline;
+                    margin-left: inherit;
+                    margin-right: 10px;
+                }
+                @include desktop {
                     display: inline;
                     margin-left: inherit;
                     margin-right: 20px;
-                 
                 }
             }
-            .mentions{
-                @include desktop{
+            .mentions {
+                @include tablet {
+                    width: 130px;
+                    font-size: 16px;
+                }
+                @include desktop {
                     margin-right: 60px;
                 }
             }

@@ -2,6 +2,18 @@
     background-color: $light-gray;
     padding: 2em 0 2em 0;
     position: relative;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+        border-radius: 2em 2em 2em 2em;
+        margin-bottom: 50px;
+        column-gap: 2em;
+        row-gap: 1em;
+    }
     @include desktop {
         display: flex;
         flex-direction: row;
@@ -22,7 +34,7 @@
     align-items: flex-start;
     width: 80%;
     margin-left: 1em;
-    @include desktop{
+    @include desktop {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,7 +89,7 @@
     transition: 0.1s ease-in-out;
     text-decoration: none;
     text-align: center;
-   margin-bottom: 25px;
+    margin-bottom: 25px;
     padding-bottom: 1.5em;
     @include desktop {
         width: 400px;
