@@ -12,19 +12,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        margin-left: 15%;
+        width: 1024px;
+       
     }
 }
 
 .title-tutorial{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 2em;
+    @include desktop{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 80%;
-        margin-top: 2em;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        height: 50px;
+        width: 60%;
     }   
-
+} 
 .step {
     display: flex;
     flex-direction: row;

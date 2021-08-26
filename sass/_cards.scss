@@ -8,10 +8,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        margin-left: 15%;
+        width: 1024px;
         border-radius: 2em 2em 2em 2em;
-        margin-bottom: 4em;
+        margin-bottom: 50px;
         column-gap: 2em;
         row-gap: 1em;
     }
@@ -25,12 +24,12 @@
     margin-left: 1em;
     @include desktop{
         display: flex;
-        
         justify-content: center;
         align-items: center;
         font-size: 30px;
         height: 50px;
         width: 60%;
+        margin-right: 40px;
         .title-restaurant::after {
             content: "";
             display: flex;
@@ -57,8 +56,9 @@
     border-radius: 3px;
     position: absolute;
     @include desktop {
-        margin: 1.5em 1em 0 27em;
+        margin: 1.5em 1em 0 23em;
         width: 20%;
+        height: 28px;
     }
 }
 .container {
@@ -70,21 +70,22 @@
     border-radius: 10px;
     color: black;
     font-size: 16px;
-    width: 85%;
+    width: 330px;
     height: 12em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transform: scale(1);
     transition: 0.1s ease-in-out;
     text-decoration: none;
     text-align: center;
-    margin: 0 0 2em 1.5em;
+   margin-bottom: 25px;
     padding-bottom: 1.5em;
     @include desktop {
-        width: 500px;
+        width: 400px;
         height: 230px;
         transform: scale(1);
         transition: 0.1s ease-in-out;
-        margin: 0.8em;
+        margin: 0.8em 0.8em 2em 0.8;
+
         &:hover {
             transform: scale(1.02);
             background-position: right center;
