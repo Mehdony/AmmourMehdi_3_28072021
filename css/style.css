@@ -2,6 +2,17 @@
   background-color: #f7f7f7;
   padding: 2em 0 2em 0;
   position: relative;
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (min-width: 768px) {
@@ -473,6 +484,14 @@ body {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 375px;
+}
+
+@media all and (min-width: 768px) {
+  .bg-img {
+    width: 450px;
+    height: 300px;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -487,6 +506,15 @@ body {
   position: relative;
   bottom: 50px;
   border-radius: 30px 30px 0 0;
+  width: 375px;
+}
+
+@media all and (min-width: 768px) {
+  .menu-container {
+    width: 450px;
+    border-radius: 30px;
+    padding-bottom: 50px;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -511,6 +539,14 @@ body {
   margin-left: 30px;
 }
 
+@media all and (min-width: 768px) {
+  .menu-container .title-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media all and (min-width: 1024px) {
   .menu-container .title-group {
     -webkit-box-pack: center;
@@ -531,6 +567,21 @@ body {
   margin-bottom: 50px;
 }
 
+@media all and (min-width: 768px) {
+  .menu-container .menu-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media all and (min-width: 1024px) {
   .menu-container .menu-group {
     display: -webkit-box;
@@ -549,6 +600,13 @@ body {
 .menu-container .menu-group .menu-group-title {
   font-weight: 400;
   font-size: 18px;
+}
+
+@media all and (min-width: 768px) {
+  .menu-container .menu-group .menu-group-title {
+    margin-right: auto;
+    margin-left: 50px;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -1113,8 +1171,8 @@ header .img-logo {
 
 .footer {
   background-color: #252525;
-  padding: 2em 0 2em 50px;
-  width: 100%;
+  padding: 2em 0 2em 0px;
+  width: 375px;
 }
 
 @media all and (min-width: 768px) {
@@ -1165,6 +1223,7 @@ header .img-logo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-left: 30px;
 }
 
 @media all and (min-width: 768px) {
@@ -1306,7 +1365,7 @@ header .img-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 305px;
 }
 
 @media all and (min-width: 768px) {
@@ -1342,7 +1401,7 @@ header .img-logo {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
-  width: 100%;
+  width: 300px;
   line-height: 5px;
 }
 
