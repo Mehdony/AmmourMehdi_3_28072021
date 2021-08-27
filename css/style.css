@@ -325,6 +325,7 @@
   width: 100%;
   row-gap: 1em;
   padding-bottom: 70px;
+  background-color: white;
 }
 
 @media all and (min-width: 1024px) {
@@ -875,6 +876,19 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f7f7f7;
+}
+
+@media all and (min-width: 768px) {
+  main {
+    background-color: white;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  main {
+    background-color: white;
+  }
 }
 
 .loading-container {
