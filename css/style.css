@@ -1254,6 +1254,7 @@ header .img-logo {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 768px;
+    padding-left: 15px;
   }
 }
 
@@ -1283,7 +1284,8 @@ header .img-logo {
 @media all and (min-width: 768px) {
   .footer .footer-group .footer-logo {
     width: 160px;
-    margin-left: 5px;
+    height: 30px;
+    padding-bottom: 7px;
   }
 }
 
@@ -1433,7 +1435,7 @@ header .img-logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 120px;
+    width: 130px;
   }
 }
 
@@ -1459,7 +1461,7 @@ header .img-logo {
           flex-direction: row;
   text-align: center;
   width: 100%;
-  line-height: 5px;
+  line-height: 50px;
 }
 
 @media all and (min-width: 768px) {
@@ -1471,6 +1473,7 @@ header .img-logo {
         -ms-flex-pack: center;
             justify-content: center;
     width: 80px;
+    padding-top: 1px;
   }
 }
 
