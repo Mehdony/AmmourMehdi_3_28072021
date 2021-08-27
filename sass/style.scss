@@ -18,9 +18,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-
-  
 }
 
 main {
@@ -29,11 +26,14 @@ main {
     justify-content: center;
     align-items: center;
     background-color: $light-gray;
-    @include tablet{
+    width: 100%;
+    @include tablet {
         background-color: white;
+        width: inherit;
     }
-    @include desktop{
+    @include desktop {
         background-color: white;
+        width: inherit;
     }
 }
 .loading-container {
@@ -211,7 +211,7 @@ header {
 .footer {
     background-color: #252525;
     padding: 2em 0 2em 0px;
-    width: 375px;
+    width: 100%;
 
     @include tablet {
         display: flex;
@@ -251,7 +251,7 @@ header {
 
         .footer-logo {
             width: 50%;
-            height:25px;
+            height: 25px;
             filter: invert(100%);
             font-family: "Shrikhand", cursive;
             font-size: 25px;
@@ -270,7 +270,7 @@ header {
             text-decoration: none;
             color: white;
             font-weight: 400;
-            
+
             @include tablet {
                 display: flex;
                 flex-direction: row;
@@ -283,8 +283,7 @@ header {
                 justify-content: space-around;
                 align-items: center;
             }
-            
-            
+
             .link1 {
                 display: flex;
                 flex-direction: row;
@@ -340,7 +339,7 @@ header {
                     width: inherit;
                 }
             }
-            
+
             .link4 {
                 display: flex;
                 flex-direction: row;
@@ -359,7 +358,7 @@ header {
                     width: inherit;
                 }
             }
-          
+
             .icon-footer {
                 color: white;
                 position: relative;
