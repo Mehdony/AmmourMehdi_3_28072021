@@ -243,11 +243,11 @@ header {
 
         .footer-logo {
             width: 50%;
-            height: 50%;
+            height:25px;
             filter: invert(100%);
             font-family: "Shrikhand", cursive;
             font-size: 25px;
-            
+            padding: 0;
             @include tablet {
                 width: 160px;
                 margin-left: 5px;
@@ -260,6 +260,8 @@ header {
         .footer-link {
             text-decoration: none;
             color: white;
+            font-weight: 400;
+            
             @include tablet {
                 display: flex;
                 flex-direction: row;
