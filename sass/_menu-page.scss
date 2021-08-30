@@ -2,7 +2,7 @@ body {
     font-weight: 300;
 }
 
-
+//  ------FLECHE NAV------
 .arrow {
     font-size: 22px;
     color: black;
@@ -24,6 +24,7 @@ body {
         height: 450px;
     }
 }
+
 
 .menu-container {
     background-color: $light-gray;
@@ -96,6 +97,8 @@ body {
             height: 3px;
             margin-top: 10px;
         }
+
+        // ------PLATS------
         .menu {
             .dish {
                 background-color: #fff;
@@ -110,7 +113,7 @@ body {
                 margin-bottom: 1em;
                 animation: moove 250ms linear both;
                 animation-delay: 300ms;
-                @for $i from 1 through 4 {
+                @for $i from 1 through 4 {    
                     &:nth-child(#{$i}) {
                         animation-delay: $i * 200ms;
                     }
@@ -127,6 +130,8 @@ body {
                     }
                 }
 
+                // ------BOUTON VALID------
+
                 &:hover > .dish-valid {
                     width: 60px;
                     transition: 450ms ease-in-out;
@@ -142,10 +147,12 @@ body {
                         width: 500px;
                     }
                 }
+
                 @include tablet {
                     width: 450px;
                     justify-content: center;
                 }
+
                 @include desktop {
                     width: 850px;
                     justify-content: center;

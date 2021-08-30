@@ -9,7 +9,6 @@
     font-family: Roboto, sans-serif;
 }
 
-// Header
 
 body {
     margin: 0;
@@ -38,7 +37,7 @@ main {
 }
 .loading-container {
     background-color: white;
-    filter: opacity(0.8);
+    filter: opacity(0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +89,9 @@ main {
         }
     }
 }
+
+// ------Header------
+
 header {
     display: flex;
     justify-content: center;
@@ -117,7 +119,7 @@ header {
     }
 }
 
-// NAV
+// ------NAV------
 
 .nav-location {
     background-color: $gray;
@@ -143,7 +145,7 @@ header {
     }
 }
 
-// Section explorer
+// ---Section explorer---
 
 .explorer {
     display: flex;
@@ -206,7 +208,7 @@ header {
     }
 }
 
-//  Section footer
+//  ----Section footer----
 
 .footer {
     background-color: #252525;

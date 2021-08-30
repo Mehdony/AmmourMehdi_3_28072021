@@ -57,6 +57,9 @@
         }
     }
 }
+
+
+//  ------NEW-----
 .new {
     display: flex;
     @include row;
@@ -77,6 +80,8 @@
         height: 28px;
     }
 }
+
+//  ------CARD------
 .container {
     @include column;
     background-color: $light-gray;
@@ -135,6 +140,10 @@
         }
     }
 }
+
+
+// ------HEART------
+
 
 .heart-group {
     display: flex;
