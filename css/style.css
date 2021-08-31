@@ -182,7 +182,7 @@
             transform: scale(1);
     -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
-    margin: 0.8em 0.8em 2em 0.8em ;
+    margin: 0.8em 0.8em 2em 0.8;
   }
   .container:hover {
     -webkit-transform: scale(1.02);
@@ -298,7 +298,6 @@
   font-size: 23px;
   position: relative;
   background: linear-gradient(353deg, #9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transform: scale(0);
