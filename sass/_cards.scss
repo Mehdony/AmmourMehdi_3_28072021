@@ -179,6 +179,7 @@
         position: relative;
         background: linear-gradient(353deg, $purple, $pink);
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scale(0);
         transition: 450ms ease-in-out;
