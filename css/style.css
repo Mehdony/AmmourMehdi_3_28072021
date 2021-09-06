@@ -298,7 +298,7 @@
   font-size: 23px;
   position: relative;
   background: linear-gradient(353deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transform: scale(0);
           transform: scale(0);
